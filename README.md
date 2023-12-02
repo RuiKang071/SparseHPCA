@@ -43,7 +43,7 @@ We provide this function to get the initial estimator.
   lambda <- 2
 
   set.seed(7)
-  alpha <- 5
+  alpha <- 5 #This parameter controls the degree of heteroskedasticity of the noises. The larger, the more heteroskedastic the noise is.
   v <- runif(p)
   sigma2 <- diag(0.1*p*v^alpha/sum(v^alpha))
   U <- matrix(0,nrow = p, ncol = r)
