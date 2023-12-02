@@ -1,4 +1,4 @@
-\name{Adaptive Off-diagonal Thresholding Sparse PCA}
+\name{Adap_off_diag}
 \alias{Adap_off_diag}
 \title{Sparse Heteroskedastic PCA in High Dimensions}
 \usage{
