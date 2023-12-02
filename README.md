@@ -27,10 +27,10 @@ install_github("RuiKang071/SparseHPCA")
 
 # Functions
 There are three main functions in this package.
-- `Generate`
-- `Adaptive off-diagonal thresholding algorithm` Our algorithm requires an initial estimator that is not perpendicular to the population truth. 
-We provide the following function to get the initial estimator.
-- `SparseHPCA`
+- `SimuData`: Generate samples under the generalized spiked covariance model.
+- `Adaptive off-diagonal thresholding algorithm`: Our algorithm requires an initial estimator that is not perpendicular to the population truth. 
+We provide this function to get the initial estimator.
+- `SparseHPCA`: The main function for sparse heteroskedastic PCA. 
 
 # Examples
 - Generate the random samples.
@@ -66,3 +66,10 @@ We provide the following function to get the initial estimator.
                              T=1000,gamma=0.8)
   sin_theta_dist(U_hat,U)
   ```
+## Author(s)
+
+Rui Kang (<ruk18@pitt.edu>), Peiliang Zhang (<pez35@pitt.edu>), and Zhao Ren (<zren@pitt.edu>).
+
+## Maintainer
+
+Rui Kang (<ruk18@pitt.edu>)
