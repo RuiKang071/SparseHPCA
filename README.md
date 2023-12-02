@@ -26,14 +26,13 @@ install_github("RuiKang071/SparseHPCA")
 ```
 
 # Functions
-Our algorithm requires an initial estimator that is not perpendicular to the population truth. 
+There are three main functions in this package.
+- `Generate`
+- `Adaptive off-diagonal thresholding algorithm` Our algorithm requires an initial estimator that is not perpendicular to the population truth. 
 We provide the following function to get the initial estimator.
-- Adaptive off-diagonal thresholding algorithm
-
-The algorithm SparseHPCA can be found in
+- `SparseHPCA`
 
 # Examples
-
 - Generate the random samples.
 - Obtain the initial estimator.
 - Use SparseHPCA to obtain the final result.
