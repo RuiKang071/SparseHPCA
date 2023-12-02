@@ -52,7 +52,7 @@ We provide the following function to get the initial estimator.
   X <- SimuData(n,mu,U,lambda,sqrt(sigma2))
   ```
 - Obtain the initial estimator.
- ```
+  ```
   Sigma_hat <- cov(X)
 
   initial <- Adap_off_diag(X,r,alpha = 2)
