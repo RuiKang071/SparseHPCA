@@ -34,5 +34,35 @@ We provide the following function to get the initial estimator.
 
 # Examples
 - Generate the random samples.
+  ```
+  r <- 1
+  n <- 256
+  p <- 512
+  mu <- rep(0,p)
+  s <- floor(p*0.1)
+  lambda <- 2
+
+  set.seed(7)
+  alpha <- 5
+  v <- runif(p)
+  sigma2 <- diag(0.1*p*v^alpha/sum(v^alpha))
+  U <- matrix(0,nrow = p, ncol = r)
+  U[1:s,] <- 1/sqrt(s)
+
+  X <- SimuData(n,mu,U,lambda,sqrt(sigma2))
+  ```
 - Obtain the initial estimator.
+ ```
+  Sigma_hat <- cov(X)
+
+  initial <- Adap_off_diag(X,r,alpha = 2)
+  U0 <- initial$eigvector
+  lambda_hat <- initial$eigvalue
+  sin_theta_dist(U0,U)
+  ```
 - Use SparseHPCA to obtain the final result.
+  ```
+  U_hat <- SparseHPCA(Sigma_hat,n,r,U0,lambda_hat,sqrt(diag(sigma2)),
+                             T=1000,gamma=0.8)
+  sin_theta_dist(U_hat,U)
+  ```
