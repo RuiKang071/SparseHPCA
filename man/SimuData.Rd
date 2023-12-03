@@ -2,7 +2,7 @@
 \alias{SimuData}
 \title{Sparse Heteroskedastic PCA in High Dimensions}
 \usage{
-SimuData <- function(n,mu,U,lambda,sigma)
+SimuData(n,mu,U,lambda,sigma)
 }
 \arguments{
 \item{n}{The sample size.}
@@ -30,6 +30,7 @@ lambda <- 2
 
 set.seed(7)
 v <- runif(p)
+alpha <- 5
 sigma2 <- diag(0.1*p*v^alpha/sum(v^alpha))
 U <- matrix(0,nrow = p, ncol = r)
 U[1:s,] <- 1/sqrt(s)
