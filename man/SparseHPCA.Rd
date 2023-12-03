@@ -2,7 +2,7 @@
 \alias{SparseHPCA}
 \title{Sparse Heteroskedastic PCA in High Dimensions}
 \usage{
-SparseHPCA <- function(Sigma_hat,n,r,U0,lambda_hat,noise_sd,T=100,gamma=1)
+SparseHPCA(Sigma_hat,n,r,U0,lambda_hat,noise_sd,T=100,gamma=1)
 }
 \arguments{\item{Sigma_hat}{A \eqn{p \times p} symmetric matrix of which the loading matrix is to be estimated.}
 \item{n}{The sample size.}
