@@ -2,7 +2,7 @@
 \alias{Adap_off_diag}
 \title{Sparse Heteroskedastic PCA in High Dimensions}
 \usage{
-Adap_off_diag <- function(X, r, alpha = 2)
+Adap_off_diag(X, r, alpha = 2)
 }
 \arguments{
 \item{X}{A \eqn{n \times p} sample matrix where \eqn{n} is the sample size and \eqn{p} is the dimension. Dimension \eqn{p} is allowed to be greater than \eqn{n}.}
