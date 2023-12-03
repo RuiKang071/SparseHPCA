@@ -1,5 +1,5 @@
-\name{sin_theta_distance}
-\alias{sin_theta_distance}
+\name{sin_theta_dist}
+\alias{sin_theta_dist}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
 Sparse Heteroskedastic PCA in High Dimensions
