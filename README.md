@@ -58,7 +58,7 @@ We provide this function to get the initial estimator.
   initial <- Adap_off_diag(X,r,alpha = 2)
   U0 <- initial$eigvector
   lambda_hat <- initial$eigvalue
-  sin_theta_dist(U0,U)
+  sin_theta_dist(U0,U)#This function comes with the package to calculate the sin-theta distance (under spectral norm) between two orthogonal matrices.
   ```
 - Use SparseHPCA to obtain the final result.
   ```
